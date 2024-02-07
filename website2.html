@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cafe</title>
+</head>
+
+<style>
+    body {
+        margin: 0;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: rgba(0, 98, 255, 0.4);
+        align-items: center;
+    }
+
+    .right {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        padding-right: 20px;
+    }
+
+    .center {
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    .left {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    span {
+        padding: 8px;
+
+        /* border-right: 1px solid rgba(0, 0, 0, 0.225); */
+    }
+
+    .output {
+        border: 1px solid beige;
+        cursor: pointer;
+
+    }
+
+    .contain {
+        height: fit-content;
+        width: fit-content;
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.652);
+        list-style: none;
+        padding: 20px;
+        line-height: 30px;
+        position: absolute;
+        top: 70px;
+        right: 100px;
+        display: none;
+    }
+
+    .main2 {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+
+    .h1 {
+        list-style: none;
+        height: fit-content;
+        width: fit-content;
+        background-color: white;
+        border: 1px solid burlywood;
+        list-style: none;
+        padding: 20px;
+        line-height: 30px;
+        display: none;
+    }
+
+    .a1 {
+        list-style: none;
+        height: fit-content;
+        width: fit-content;
+        background-color: white;
+        border: 1px solid burlywood;
+        list-style: none;
+        padding: 20px;
+        line-height: 30px;
+        display: none;
+    }
+
+    .s1 {
+        list-style: none;
+        height: fit-content;
+        width: fit-content;
+        background-color: white;
+        border: 1px solid burlywood;
+        list-style: none;
+        padding: 20px;
+        line-height: 30px;
+        display: none;
+    }
+
+    .g1 {
+        list-style: none;
+        height: fit-content;
+        width: fit-content;
+        background-color: white;
+        border: 1px solid burlywood;
+        list-style: none;
+        padding: 20px;
+        line-height: 30px;
+        display: none;
+    }
+
+    .c1 {
+        list-style: none;
+        height: fit-content;
+        width: fit-content;
+        background-color: white;
+        border: 1px solid burlywood;
+        list-style: none;
+        padding: 20px;
+        line-height: 30px;
+        display: none;
+    }
+</style>
+
+<body>
+
+    <div class="main">
+
+        <div class="left">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <span><i class="fa-brands fa-facebook"></i></span>
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <span><i class="fa-brands fa-instagram"></i></span>
+            </div>
+        </div>
+        <div class="center">
+            Food Cafe
+        </div>
+
+        <div class="right">
+            <div class="location">
+                <span><i class="fa-solid fa-earth-americas"></i></span>
+                <span class="output" onclick="show()">
+                    <span>English</span>
+                    <span><i class="fa-solid fa-chevron-down"></i></span>
+                </span>
+                <div class="contain" id="demo">
+                    <li>Portuguese</li>
+                    <li>Japanese</li>
+                    <li>Dutch</li>
+                    <li>Persian</li>
+                    <li>French</li>
+                    <li>Arabic</li>
+
+                </div>
+
+            </div>
+
+            <h3>Login</h3>
+        </div>
+    </div>
+
+    <div class="main2">
+        <div class="div1">
+            <h2 onclick="show1()">Home</h2>
+            <div class="h1" id="home">
+                <li>Home1</li>
+                <li>Home2</li>
+                <li>Home3</li>
+            </div>
+        </div>
+        <div class="div2">
+            <h2 onclick="show2()">About Us</h2>
+            <div class="a1" id="about">
+                <li>Who We Are</li>
+                <li>Team</li>
+                <li>FAQ</li>
+            </div>
+        </div>
+        <div class="div3">
+            <h2 onclick="show3()">Services</h2>
+            <div class="s1" id="services">
+                <li>Services1</li>
+                <li>Services2</li>
+                <li>Services3</li>
+            </div>
+        </div>
+        <div class="div3">
+            <h2 onclick="show4()">Gallery</h2>
+            <div class="g1" id="gallery">
+                <li>Gallery1</li>
+                <li>Gallery2</li>
+                <li>Gallery3</li>
+            </div>
+        </div>
+        <div class="div4">
+            <h2 onclick="show5()">Contact Us</h2>
+            <div class="c1" id="contact">
+                <li>Contact1</li>
+                <li>Contact2</li>
+                <li>Contact3</li>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+</body>
+
+<script>
+    function show() {
+
+        if (document.getElementById('demo').style.display == "none") {
+            document.getElementById('demo').style.display = "block"
+        }
+        else {
+            document.getElementById('demo').style.display = "none"
+        }
+    }
+
+    function show1() {
+        if (document.getElementById('home').style.display == "none") {
+            document.getElementById('home').style.display = "block"
+            document.getElementById('about').style.display = "none"
+            document.getElementById('services').style.display = "none"
+            document.getElementById('gallery').style.display = "none"
+            document.getElementById('contact').style.display = "none"
+        }
+        else {
+            document.getElementById('home').style.display = "none"
+        }
+    }
+    function show2() {
+        if (document.getElementById('about').style.display == "none") {
+            document.getElementById('about').style.display = "block"
+            document.getElementById('home').style.display = "none"
+            document.getElementById('services').style.display = "none"
+            document.getElementById('gallery').style.display = "none"
+            document.getElementById('contact').style.display = "none"
+        }
+        else {
+            document.getElementById('about').style.display = "none"
+        }
+    }
+    function show3() {
+        if (document.getElementById('services').style.display == "none") {
+            document.getElementById('services').style.display = "block"
+            document.getElementById('about').style.display = "none"
+            document.getElementById('home').style.display = "none"
+            document.getElementById('gallery').style.display = "none"
+            document.getElementById('contact').style.display = "none"
+        }
+        else {
+            document.getElementById('services').style.display = "none"
+        }
+    }
+    function show4() {
+        if (document.getElementById('gallery').style.display == "none") {
+            document.getElementById('gallery').style.display = "block"
+            document.getElementById('about').style.display = "none"
+            document.getElementById('services').style.display = "none"
+            document.getElementById('home').style.display = "none"
+            document.getElementById('contact').style.display = "none"
+        }
+        else {
+            document.getElementById('gallery').style.display = "none"
+        }
+    }
+    function show5() {
+        if (document.getElementById('contact').style.display == "none") {
+            document.getElementById('contact').style.display = "block"
+            document.getElementById('about').style.display = "none"
+            document.getElementById('services').style.display = "none"
+            document.getElementById('gallery').style.display = "none"
+            document.getElementById('home').style.display = "none"
+        }
+        else {
+            document.getElementById('contact').style.display = "none"
+        }
+    }
+</script>
+
+</html>
